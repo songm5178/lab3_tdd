@@ -13,7 +13,7 @@ import org.junit.Test;
 public class PrimeNumberGeneratorTest {
 
 	@Test
-	public void test() {
+	public void testCaseFor1() {
 		assertEquals(list(), PrimeNumberGenerator.generate(1));
 	}
 
