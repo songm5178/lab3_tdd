@@ -29,6 +29,9 @@ public class Test {
 	public void testForTwo() {
 		assertEquals(list(2), PrimeNumberGenerator.generate(2));
 	}
-	
+	@org.junit.Test
+	public void testForThree() {
+		assertEquals(list(3), PrimeNumberGenerator.generate(2));
+	}
 
 }
