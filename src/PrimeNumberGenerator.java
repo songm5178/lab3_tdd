@@ -9,12 +9,22 @@ import java.util.List;
 public class PrimeNumberGenerator {
 	public static List<Integer> generate(int i) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
-		if(i>2){
-			primes.add(2);
-		}
-		if(i>3){
-			primes.add(3);
+		for (int candidate = 2; candidate < i; candidate++) {
+			if (PrimeNumberChecker.validate(candidate)) {
+				primes.add(candidate);
+			}
 		}
 		return primes;
+	}
+
+	public static class PrimeNumberChecker {
+		public static Boolean validate(Integer primeNumber) {
+			for (int i = 2; i <= (primeNumber / 2); i++) {
+				if (primeNumber % i == 0) {
+					return false;
+				}
+			}
+			return true;
+		}
 	}
 }
