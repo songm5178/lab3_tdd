@@ -12,7 +12,7 @@ public class Test {
 
 	@org.junit.Test
 	public void test() {
-		PrimeNumberGenerator g = new PrimeNumberGenerator();
+		PrimeFactorization g = new PrimeFactorization();
 
 	}
 
@@ -23,41 +23,41 @@ public class Test {
 	@org.junit.Test
 	public void testForEmpty() {
 
-		assertEquals(list(), PrimeNumberGenerator.generate(1));
+		assertEquals(list(), PrimeFactorization.generate(1));
 	}
 
 	@org.junit.Test
 	public void testForTwo() {
-		assertEquals(list(2), PrimeNumberGenerator.generate(2));
+		assertEquals(list(2), PrimeFactorization.generate(2));
 	}
 
 	@org.junit.Test
 	public void testForThree() {
-		assertEquals(list(3), PrimeNumberGenerator.generate(3));
+		assertEquals(list(3), PrimeFactorization.generate(3));
 	}
 
 	@org.junit.Test
 	public void testForFour() {
-		assertEquals(list(2, 2), PrimeNumberGenerator.generate(4));
+		assertEquals(list(2, 2), PrimeFactorization.generate(4));
 	}
 
 	@org.junit.Test
 	public void testForSix() {
-		assertEquals(list(2, 3), PrimeNumberGenerator.generate(6));
+		assertEquals(list(2, 3), PrimeFactorization.generate(6));
 	}
 
 	@org.junit.Test
 	public void testForEight() {
-		assertEquals(list(2, 2, 2), PrimeNumberGenerator.generate(8));
+		assertEquals(list(2, 2, 2), PrimeFactorization.generate(8));
 	}
 
 	@org.junit.Test
 	public void testForNine() {
-		assertEquals(list(3, 3), PrimeNumberGenerator.generate(9));
+		assertEquals(list(3, 3), PrimeFactorization.generate(9));
 	}
 
 	@org.junit.Test
 	public void testForBigNumber() {
-		assertEquals(list(5, 7, 7, 1327), PrimeNumberGenerator.generate(325115));
+		assertEquals(list(5, 7, 7, 1327), PrimeFactorization.generate(325115));
 	}
 }
