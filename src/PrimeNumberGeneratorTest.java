@@ -35,4 +35,9 @@ public class PrimeNumberGeneratorTest {
 	public void testCaseFor5() {
 		assertEquals(list(2, 3), PrimeNumberGenerator.generate(5));
 	}
+
+	@Test
+	public void testCaseFor7() {
+		assertEquals(list(2, 3, 5), PrimeNumberGenerator.generate(7));
+	}
 }
