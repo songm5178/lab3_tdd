@@ -33,6 +33,6 @@ public class PrimeNumberGeneratorTest {
 
 	@Test
 	public void testCaseFor5() {
-		assertEquals(list(2, 3), PrimeNumberGenerator.generate(3));
+		assertEquals(list(2, 3), PrimeNumberGenerator.generate(5));
 	}
 }
