@@ -12,6 +12,8 @@ public class PrimeNumberGenerator {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
 		if(i>1){
 			primes.add(2);
+		}else if(i>2){
+			primes.add(3);
 		}
 		return primes;
 	}

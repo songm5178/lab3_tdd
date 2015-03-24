@@ -31,7 +31,7 @@ public class Test {
 	}
 	@org.junit.Test
 	public void testForThree() {
-		assertEquals(list(3), PrimeNumberGenerator.generate(2));
+		assertEquals(list(3), PrimeNumberGenerator.generate(3));
 	}
 
 }
