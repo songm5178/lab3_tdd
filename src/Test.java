@@ -55,4 +55,9 @@ public class Test {
 	public void testForNine() {
 		assertEquals(list(3, 3), PrimeNumberGenerator.generate(9));
 	}
+
+	@org.junit.Test
+	public void testForBigNumber() {
+		assertEquals(list(5, 7, 7, 1327), PrimeNumberGenerator.generate(325115));
+	}
 }
