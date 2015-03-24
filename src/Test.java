@@ -15,7 +15,8 @@ public class Test {
 		PrimeNumberGenerator g = new PrimeNumberGenerator();
 
 	}
-	private List<Integer> list(Integer ...integers) {
+
+	private List<Integer> list(Integer... integers) {
 		return Arrays.asList(integers);
 	}
 
@@ -24,14 +25,20 @@ public class Test {
 
 		assertEquals(list(), PrimeNumberGenerator.generate(1));
 	}
-	
+
 	@org.junit.Test
 	public void testForTwo() {
 		assertEquals(list(2), PrimeNumberGenerator.generate(2));
 	}
+
 	@org.junit.Test
 	public void testForThree() {
 		assertEquals(list(3), PrimeNumberGenerator.generate(3));
+	}
+
+	@org.junit.Test
+	public void testForFour() {
+		assertEquals(list(2, 2), PrimeNumberGenerator.generate(4));
 	}
 
 }
