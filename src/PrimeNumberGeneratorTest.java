@@ -22,10 +22,10 @@ public class PrimeNumberGeneratorTest {
 	}
 	@Test
 	public void testCaseFor2() {
-		assertEquals(list(), PrimeNumberGenerator.generate(1));
+		assertEquals(list(), PrimeNumberGenerator.generate(2));
 	}
 	@Test
 	public void testCaseFor3() {
-		assertEquals(list(2), PrimeNumberGenerator.generate(1));
+		assertEquals(list(2), PrimeNumberGenerator.generate(3));
 	}
 }
