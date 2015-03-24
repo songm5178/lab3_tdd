@@ -15,15 +15,20 @@ public class Test {
 		PrimeNumberGenerator g = new PrimeNumberGenerator();
 
 	}
+	private List<Integer> list(Integer ...integers) {
+		return Arrays.asList(integers);
+	}
 
 	@org.junit.Test
 	public void testForEmpty() {
 
 		assertEquals(list(), PrimeNumberGenerator.generate(1));
 	}
-
-	private List<Integer> list() {
-		return Arrays.asList();
+	
+	@org.junit.Test
+	public void testForTwo() {
+		assertEquals(list(2), PrimeNumberGenerator.generate(2));
 	}
+	
 
 }
