@@ -12,13 +12,16 @@ import org.junit.Test;
  */
 public class PrimeNumberGeneratorTest {
 
-	@Test
-	public void testCaseFor1() {
-		assertEquals(list(), PrimeNumberGenerator.generate(1));
-	}
-
 	private List<Integer> list(Integer... integers) {
 		return Arrays.asList(integers);
 	}
 
+	@Test
+	public void testCaseFor1() {
+		assertEquals(list(), PrimeNumberGenerator.generate(1));
+	}
+	@Test
+	public void testCaseFor2() {
+		assertEquals(list(), PrimeNumberGenerator.generate(1));
+	}
 }
