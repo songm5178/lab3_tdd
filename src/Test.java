@@ -46,4 +46,8 @@ public class Test {
 		assertEquals(list(2, 3), PrimeNumberGenerator.generate(6));
 	}
 
+	@org.junit.Test
+	public void testForEight() {
+		assertEquals(list(2, 2, 2), PrimeNumberGenerator.generate(8));
+	}
 }
