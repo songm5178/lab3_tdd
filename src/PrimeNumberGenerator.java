@@ -10,6 +10,7 @@ public class PrimeNumberGenerator {
 	public static List<Integer> generate(int i) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
 		for (int candidate = 2; candidate < i; candidate++) {
+
 			if (PrimeNumberChecker.validate(candidate)) {
 				primes.add(candidate);
 			}

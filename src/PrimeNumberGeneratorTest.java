@@ -43,6 +43,18 @@ public class PrimeNumberGeneratorTest {
 
 	@Test
 	public void testCaseFor13() {
-		assertEquals(list(2, 3, 5, 7, 11), PrimeNumberGenerator.generate(7));
+		assertEquals(list(2, 3, 5, 7, 11), PrimeNumberGenerator.generate(13));
+	}
+
+	@Test
+	public void testCaseFor14() {
+		assertEquals(list(2, 3, 5, 7, 11, 13),
+				PrimeNumberGenerator.generate(14));
+	}
+
+	@Test
+	public void testCaseFor32() {
+		assertEquals(list(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31),
+				PrimeNumberGenerator.generate(32));
 	}
 }
