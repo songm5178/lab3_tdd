@@ -50,4 +50,9 @@ public class Test {
 	public void testForEight() {
 		assertEquals(list(2, 2, 2), PrimeNumberGenerator.generate(8));
 	}
+
+	@org.junit.Test
+	public void testForNine() {
+		assertEquals(list(3, 3), PrimeNumberGenerator.generate(9));
+	}
 }
