@@ -20,12 +20,19 @@ public class PrimeNumberGeneratorTest {
 	public void testCaseFor1() {
 		assertEquals(list(), PrimeNumberGenerator.generate(1));
 	}
+
 	@Test
 	public void testCaseFor2() {
 		assertEquals(list(), PrimeNumberGenerator.generate(2));
 	}
+
 	@Test
 	public void testCaseFor3() {
 		assertEquals(list(2), PrimeNumberGenerator.generate(3));
+	}
+
+	@Test
+	public void testCaseFor5() {
+		assertEquals(list(2, 3), PrimeNumberGenerator.generate(3));
 	}
 }
